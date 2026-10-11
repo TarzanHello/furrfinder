@@ -129,7 +129,7 @@ if (count($parti) === 1) {
   $b .= '<section class="sm-faq"><h2 class="sm-h2">Hai perso il tuo cane o il tuo gatto a ' . h($nome) . '? Cosa fare subito</h2><ol>'
     . '<li><strong>Cerca subito nella zona</strong> in cui si è perso, chiamandolo con calma: spesso un animale spaventato si nasconde a poche centinaia di metri.</li>'
     . '<li><strong>Pubblica l\'avviso</strong> con foto e zona e condividi la locandina nei gruppi di quartiere di ' . h($nome) . ', su WhatsApp e Facebook.</li>'
-    . '<li><strong>Denuncia lo smarrimento</strong> alla Polizia locale o ai Carabinieri e comunicalo alla ASL dove è iscritto all\'anagrafe: nel Lazio va fatto entro 15 giorni, in altre regioni i tempi possono essere diversi.</li>'
+    . '<li><strong>Denuncia lo smarrimento</strong> alla Polizia locale o ai Carabinieri e comunicalo alla ASL dove è iscritto all\'anagrafe: fallo il prima possibile, entro pochi giorni (la ASL Roma 3, per esempio, chiede entro 5 giorni).</li>'
     . '<li><strong>Avvisa i veterinari e il canile</strong> della zona: chi trova un animale spesso lo porta lì per leggere il microchip.</li></ol>'
     . '<p><a class="sm-link" href="/smarriti/hai-perso-il-tuo-animale">La guida completa: cosa fare se hai perso il tuo animale →</a></p>'
     . '<details><summary>Ho trovato un cane o un gatto a ' . h($nome) . ': cosa faccio?</summary><p>Controlla se è tra gli avvisi qui sopra e, se lo riconosci, premi "L\'ho trovato". Poi portalo da un veterinario o alla Polizia locale per leggere il microchip: così si risale al proprietario.</p></details>'

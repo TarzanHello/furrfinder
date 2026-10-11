@@ -1,0 +1,33 @@
+# FurrFinder (www.furrfinder.com)
+
+## Purpose
+FurrFinder is a free digital health record ("libretto sanitario digitale") for dogs and cats, for pet owners in Italy. It is connected to the owner's veterinary clinic: when the clinic uses Vetroom (vetroom.it, a free veterinary practice management software by the same company), visits, PDF reports, vaccinations and recall reminders reach the owner's phone automatically.
+
+## What owners can do
+- Keep a health record per animal: visits, PDF reports, vaccinations, weight, microchip
+- Receive push reminders for vaccine recalls and check-ups set by the vet
+- Request appointments in the clinic's free time slots and receive confirmation
+- Message the clinic with photos and PDFs, with read receipts
+- Find veterinary invoices year by year for the Italian tax return (730), with an estimate of the 19% deduction and the status of the transmission to the Sistema Tessera Sanitaria
+- Share an animal only with chosen clinics and revoke access at any time
+- Use it from the browser, installable on the phone home screen (no app store needed); Italian and English
+
+## Key facts
+- Free for owners; Vetroom is free for veterinarians
+- Data stored on servers in the European Union (Frankfurt)
+- Login with a Google account
+- Operated by AF&B S.r.l.s., Via Mario Ugo Guattari 48, 00173 Roma, Italy, VAT IT13698751008
+
+## Main pages
+- Home: https://www.furrfinder.com/
+- How it works: https://www.furrfinder.com/come-funziona.html
+- Features: https://www.furrfinder.com/funzionalita.html
+- Data security: https://www.furrfinder.com/sicurezza.html
+- FAQ: https://www.furrfinder.com/faq.html
+- Guides: https://www.furrfinder.com/guide.html
+- Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
+- Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
+- Pet bonus for over-65s (Italy): https://www.furrfinder.com/bonus-animali-domestici-2026.html
+
+## Notes
+Content on this site is informative and does not replace a veterinary visit. Contact: info@vetroom.it

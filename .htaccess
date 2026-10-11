@@ -13,6 +13,9 @@ RewriteRule ^index\.html$ / [L,R=301]
 Redirect 301 /controlli-veterinari-animali-domestici.html https://www.furrfinder.com/cartella-clinica-pet.html
 Redirect 301 /gestione-salute-pet.html https://www.furrfinder.com/cartella-clinica-pet.html
 
+# Vecchio indirizzo con errore di battitura
+Redirect 301 /microchip-cane-gatto-documents.html https://www.furrfinder.com/microchip-cane-gatto-documenti.html
+
 ErrorDocument 404 /404.html
 
 <IfModule mod_headers.c>
@@ -24,6 +27,7 @@ ErrorDocument 404 /404.html
 
 AddType font/woff2 .woff2
 AddType application/manifest+json .webmanifest
+AddType application/pdf .pdf
 
 <IfModule mod_expires.c>
   ExpiresActive On
@@ -35,6 +39,7 @@ AddType application/manifest+json .webmanifest
   ExpiresByType image/webp "access plus 30 days"
   ExpiresByType image/svg+xml "access plus 30 days"
   ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType application/pdf "access plus 7 days"
 </IfModule>
 
 <IfModule mod_deflate.c>

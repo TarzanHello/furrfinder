@@ -451,11 +451,23 @@ th{font-family:var(--f-head);color:var(--ink);font-weight:800}
 .poster .p-foot{text-align:center;font-size:2.4cqw;color:#4B5563;padding:1.4cqw}
 @media print{
   @page{size:A4;margin:0}
-  body{background:#fff}
-  body > *:not(main){display:none !important}
-  main .page-header, main .section > .container > *:not(.vol), .vol > :not(.poster-wrap), .vol-print-hide{display:none !important}
-  .vol{display:block;margin:0}
-  .poster-wrap{position:static}
-  .poster{width:210mm;height:297mm;aspect-ratio:auto;box-shadow:none;border-radius:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .section{padding:0}.container{padding:0;max-width:none}
+  body:has(.vol){background:#fff}
+  body:has(.vol) > *:not(main){display:none !important}
+  body:has(.vol) main .page-header, body:has(.vol) main .section > .container > *:not(.vol), body:has(.vol) .vol > :not(.poster-wrap){display:none !important}
+  body:has(.vol) .vol{display:block;margin:0}
+  body:has(.vol) .poster-wrap{position:static}
+  body:has(.vol) .poster{width:210mm;height:297mm;aspect-ratio:auto;box-shadow:none;border-radius:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body:has(.vol) .section{padding:0}
+  body:has(.vol) .container{padding:0;max-width:none}
 }
+
+/* Semaforo dell'urgenza nelle guide "cosa fare" */
+.semaforo{display:grid;gap:14px;margin-top:18px}
+.semaforo > div{border-radius:16px;padding:16px 18px;border:1px solid var(--line);border-left-width:8px;background:var(--surface)}
+.semaforo h3{margin-top:0 !important;font-size:1.1rem;display:flex;align-items:center;gap:10px}
+.semaforo h3::before{content:"";width:14px;height:14px;border-radius:50%;flex:none}
+.semaforo ul{margin:8px 0 0;padding-left:1.2em}
+.semaforo li+li{margin-top:4px}
+.sem-rosso{border-left-color:#B91C1C !important}.sem-rosso h3::before{background:#DC2626}
+.sem-giallo{border-left-color:#D97706 !important}.sem-giallo h3::before{background:#F59E0B}
+.sem-verde{border-left-color:#15803D !important}.sem-verde h3::before{background:#16A34A}

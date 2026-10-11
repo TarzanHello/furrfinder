@@ -125,6 +125,15 @@ if (count($parti) === 1) {
   if ($aperti) $b .= '<div class="sm-filtro"><button class="sm-btn sm-btn-ghost" type="button" id="vicino">📍 Più vicini a me</button></div><ul class="sm-grid" id="lista">' . implode('', array_map('sm_card', $aperti)) . '</ul>';
   if ($trovati) $b .= '<h2 class="sm-h2">Tornati a casa a ' . h($nome) . '</h2><ul class="sm-grid">' . implode('', array_map('sm_card', $trovati)) . '</ul>';
   $b .= '<div class="sm-boxes">' . sm_box_pubblica() . sm_box_trovato() . '</div>';
+  // Guida pratica per la città: utile a chi cerca "cane smarrito <città>" anche quando gli avvisi sono pochi
+  $b .= '<section class="sm-faq"><h2 class="sm-h2">Hai perso il tuo cane o il tuo gatto a ' . h($nome) . '? Cosa fare subito</h2><ol>'
+    . '<li><strong>Cerca subito nella zona</strong> in cui si è perso, chiamandolo con calma: spesso un animale spaventato si nasconde a poche centinaia di metri.</li>'
+    . '<li><strong>Pubblica l\'avviso</strong> con foto e zona e condividi la locandina nei gruppi di quartiere di ' . h($nome) . ', su WhatsApp e Facebook.</li>'
+    . '<li><strong>Denuncia lo smarrimento</strong> alla Polizia locale o ai Carabinieri e comunicalo alla ASL dove è iscritto all\'anagrafe: fallo il prima possibile, entro pochi giorni (la ASL Roma 3, per esempio, chiede entro 5 giorni).</li>'
+    . '<li><strong>Avvisa i veterinari e il canile</strong> della zona: chi trova un animale spesso lo porta lì per leggere il microchip.</li></ol>'
+    . '<p><a class="sm-link" href="/smarriti/hai-perso-il-tuo-animale">La guida completa: cosa fare se hai perso il tuo animale →</a></p>'
+    . '<details><summary>Ho trovato un cane o un gatto a ' . h($nome) . ': cosa faccio?</summary><p>Controlla se è tra gli avvisi qui sopra e, se lo riconosci, premi "L\'ho trovato". Poi portalo da un veterinario o alla Polizia locale per leggere il microchip: così si risale al proprietario.</p></details>'
+    . '<details><summary>Quanto costa pubblicare un avviso a ' . h($nome) . '?</summary><p>Niente. L\'avviso, la locandina con il codice QR e le segnalazioni di chi lo vede sono gratuiti.</p></details></section>';
   if (!$elenco) http_response_code(404);
   sm_pagina(['url' => "/smarriti/$cs/", 'indicizza' => (bool)$elenco, 'js' => $aperti ? ['hub' => true] : null,
     'title' => "Animali smarriti a $nome: cani e gatti persi | FurrFinder",

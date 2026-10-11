@@ -26,12 +26,26 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Data security: https://www.furrfinder.com/sicurezza.html
 - FAQ: https://www.furrfinder.com/faq.html
 - Guides: https://www.furrfinder.com/guide.html
+- Dog health record (libretto sanitario del cane): https://www.furrfinder.com/libretto-sanitario-cane.html
+- Cat health record (libretto sanitario del gatto): https://www.furrfinder.com/libretto-sanitario-gatto.html
+- Free printable pet health record, PDF for dogs and cats: https://www.furrfinder.com/per-cani-e-gatti.html
 - Lost & Found, lost pets near you: https://www.furrfinder.com/smarriti/
 - Lost your pet? What to do: https://www.furrfinder.com/smarriti/hai-perso-il-tuo-animale
 - Found a pet? What to do: https://www.furrfinder.com/smarriti/hai-trovato-un-animale
+- Dog age in human years, calculator by size: https://www.furrfinder.com/eta-cane-anni-umani.html
+- Cat age in human years, calculator: https://www.furrfinder.com/eta-gatto-anni-umani.html
+- Foods toxic to dogs and what to do: https://www.furrfinder.com/cibi-tossici-cani.html
+- Foods and plants toxic to cats: https://www.furrfinder.com/cibi-tossici-gatti.html
+- Pet passport and travel abroad (Italy/EU): https://www.furrfinder.com/passaporto-cane-gatto.html
+- Heartworm in dogs (filaria): https://www.furrfinder.com/filaria-cane.html
+- Canine leishmaniasis: https://www.furrfinder.com/leishmaniosi-cane.html
 - Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
 - Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
+- Vet expenses tax deduction in the Italian 730 return, with calculator: https://www.furrfinder.com/spese-veterinarie-730.html
+- Dog registry (anagrafe canina), change of ownership: https://www.furrfinder.com/anagrafe-canina.html
+- Adopting a dog from a shelter: https://www.furrfinder.com/adottare-cane-canile.html
 - Pet bonus for over-65s (Italy): https://www.furrfinder.com/bonus-animali-domestici-2026.html
 
 ## Notes
+Health guides are reviewed by Dr. Federica Dromi, veterinarian registered with the Ordine dei Medici Veterinari della Provincia di Roma (no. 2513): https://www.furrfinder.com/revisione-veterinaria.html
 Content on this site is informative and does not replace a veterinary visit. Contact: info@vetroom.it

@@ -38,7 +38,7 @@ function sm_errore($codice, $titolo, $testo) {
   exit;
 }
 function sm_box_pubblica() {
-  return '<aside class="sm-box sm-box-red"><h2>Hai perso il tuo animale?</h2><p>Pubblica l\'avviso gratis in un minuto: FurrFinder prepara la pagina e la locandina da condividere su WhatsApp e Facebook. Chi lo vede ti avvisa subito. Il punto esatto resta privato.</p><a class="sm-btn sm-btn-red" href="/app/?per=proprietario&amp;dopo=smarrito">Pubblica un avviso</a> <a class="sm-link" href="/smarriti/hai-perso-il-tuo-animale">Cosa fare subito →</a></aside>';
+  return '<aside class="sm-box sm-box-red"><h2>Hai perso il tuo animale?</h2><p>Pubblica l\'avviso gratis in un minuto: FurrFinder prepara la pagina e la locandina da condividere su WhatsApp e Facebook. Chi lo vede ti avvisa subito. Il punto esatto resta privato.</p><a class="sm-btn sm-btn-red" href="/app/?per=proprietario&amp;dopo=smarrito">Pubblica un avviso</a> <a class="sm-link" href="/smarriti/hai-perso-il-tuo-animale">Cosa fare subito →</a>' . (SM_MARCA === 'furrfinder' ? ' <a class="sm-link" href="/volantino-animale-smarrito.html">Crea un volantino da stampare →</a>' : '') . '</aside>';
 }
 function sm_box_trovato() {
   return '<aside class="sm-box"><h2>Hai trovato un animale?</h2><p>Guarda se qualcuno lo sta cercando qui sopra e apri il suo avviso: con <b>L\'ho trovato</b> il proprietario riceve subito il tuo messaggio. Poi fallo controllare da un veterinario: con il microchip si risale al proprietario.</p><a class="sm-btn" href="/smarriti/hai-trovato-un-animale">Cosa fare se lo trovi</a> <a class="sm-link" href="/veterinari/">Trova un veterinario →</a></aside>';

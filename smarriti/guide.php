@@ -20,7 +20,7 @@ function sm_guida($slug) {
       . '<h2>3. Fai girare l\'avviso</h2><ul>'
       . '<li>Condividi la pagina dell\'avviso nei gruppi WhatsApp del palazzo, del quartiere, della scuola e del lavoro.</li>'
       . '<li>Pubblicala nei gruppi Facebook di animali smarriti della tua città e del quartiere.</li>'
-      . '<li>Stampa la locandina A4 e lasciala a negozi, bar, farmacie e studi veterinari della zona: il codice QR porta alla pagina, dove chiunque può segnalare un avvistamento.</li></ul>'
+      . '<li>Stampa la locandina A4 e lasciala a negozi, bar, farmacie e studi veterinari della zona: il codice QR porta alla pagina, dove chiunque può segnalare un avvistamento.</li>' . (SM_MARCA === 'furrfinder' ? '<li>Ti serve subito qualcosa da appendere? Con il <a href="/volantino-animale-smarrito.html">generatore di volantini</a> crei in un minuto un volantino A4 o un\'immagine per WhatsApp, senza registrazione.</li>' : '') . '</ul>'
       . '<h2>4. Avvisa chi può trovarlo</h2><ul>'
       . '<li><b>Polizia locale</b> del tuo Comune e <b>canile comunale</b>: spesso sono i primi a ricevere gli animali trovati.</li>'
       . '<li><b>Servizio veterinario della ASL</b>: per il cane lo smarrimento va denunciato; in molte regioni la legge chiede di farlo entro pochi giorni. Chiedi alla tua ASL o al tuo veterinario come fare.</li>'

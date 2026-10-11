@@ -10,6 +10,7 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Message the clinic with photos and PDFs, with read receipts
 - Find veterinary invoices year by year for the Italian tax return (730), with an estimate of the 19% deduction and the status of the transmission to the Sistema Tessera Sanitaria
 - Share an animal only with chosen clinics and revoke access at any time
+- Publish a free lost-pet alert (Lost & Found): public page with photo and approximate area, shareable poster with QR code, sightings from anyone with push notification to the owner
 - Use it from the browser, installable on the phone home screen (no app store needed); Italian and English
 
 ## Key facts
@@ -25,6 +26,9 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Data security: https://www.furrfinder.com/sicurezza.html
 - FAQ: https://www.furrfinder.com/faq.html
 - Guides: https://www.furrfinder.com/guide.html
+- Lost & Found, lost pets near you: https://www.furrfinder.com/smarriti/
+- Lost your pet? What to do: https://www.furrfinder.com/smarriti/hai-perso-il-tuo-animale
+- Found a pet? What to do: https://www.furrfinder.com/smarriti/hai-trovato-un-animale
 - Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
 - Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
 - Pet bonus for over-65s (Italy): https://www.furrfinder.com/bonus-animali-domestici-2026.html

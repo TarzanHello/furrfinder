@@ -36,9 +36,13 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Cat age in human years, calculator: https://www.furrfinder.com/eta-gatto-anni-umani.html
 - Foods toxic to dogs and what to do: https://www.furrfinder.com/cibi-tossici-cani.html
 - Foods and plants toxic to cats: https://www.furrfinder.com/cibi-tossici-gatti.html
+- Pet passport and travel abroad (Italy/EU): https://www.furrfinder.com/passaporto-cane-gatto.html
+- Heartworm in dogs (filaria): https://www.furrfinder.com/filaria-cane.html
+- Canine leishmaniasis: https://www.furrfinder.com/leishmaniosi-cane.html
 - Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
 - Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
 - Pet bonus for over-65s (Italy): https://www.furrfinder.com/bonus-animali-domestici-2026.html
 
 ## Notes
+Health guides are reviewed by Dr. Federica Dromi, veterinarian registered with the Ordine dei Medici Veterinari della Provincia di Roma (no. 2513): https://www.furrfinder.com/revisione-veterinaria.html
 Content on this site is informative and does not replace a veterinary visit. Contact: info@vetroom.it

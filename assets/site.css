@@ -421,3 +421,5 @@ th{font-family:var(--f-head);color:var(--ink);font-weight:800}
 .liv-alto{background:#FDE2E2;color:#991B1B}.liv-medio{background:#FFEDD5;color:#9A3412}.liv-basso{background:var(--sun-soft);color:var(--sun-ink)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .liv-alto{background:#4A1515;color:#FCA5A5}:root:not([data-theme="light"]) .liv-medio{background:#47230F;color:#FDBA74}}
 :root[data-theme="dark"] .liv-alto{background:#4A1515;color:#FCA5A5}:root[data-theme="dark"] .liv-medio{background:#47230F;color:#FDBA74}
+.byline{margin-top:12px;font-size:.95rem;color:var(--muted)}
+.byline a{font-weight:600}

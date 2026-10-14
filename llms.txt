@@ -46,6 +46,8 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Canine leishmaniasis: https://www.furrfinder.com/leishmaniosi-cane.html
 - Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
 - Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
+- Annual cost of a dog, calculator: https://www.furrfinder.com/costo-mantenimento-cane.html
+- Annual cost of a cat, calculator: https://www.furrfinder.com/costo-mantenimento-gatto.html
 - Vet expenses tax deduction in the Italian 730 return, with calculator: https://www.furrfinder.com/spese-veterinarie-730.html
 - Dog registry (anagrafe canina), change of ownership: https://www.furrfinder.com/anagrafe-canina.html
 - Adopting a dog from a shelter: https://www.furrfinder.com/adottare-cane-canile.html

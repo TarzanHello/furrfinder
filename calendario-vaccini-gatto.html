@@ -114,7 +114,7 @@
    "description": "Quando vaccinare il gattino, quali vaccini servono anche al gatto di casa, quando fare la leucemia felina e ogni quanto ripetere i richiami.",
    "inLanguage": "it-IT",
    "datePublished": "2026-10-08",
-   "dateModified": "2026-10-08",
+   "dateModified": "2026-10-14",
    "image": "https://www.furrfinder.com/assets/og-image.png",
    "mainEntityOfPage": "https://www.furrfinder.com/calendario-vaccini-gatto.html",
    "author": {
@@ -199,8 +199,19 @@
 <section class="section">
   <div class="container">
     <article class="prose">
-      <p class="updated">Aggiornata il 8 ottobre 2026</p>
+      <p class="updated">Aggiornata il 14 ottobre 2026</p>
       <div class="inbreve"><strong>In breve</strong><p>Il gattino inizia i vaccini a 6–8 settimane, con richiami ogni 2–4 settimane fino ad almeno 16 settimane e un altro richiamo verso i 6 mesi. Panleucopenia, rinotracheite e calicivirosi servono a tutti i gatti, anche a quelli che non escono. La leucemia felina si consiglia ai gattini e ai gatti che escono. Il calendario preciso lo decide il tuo veterinario.</p></div>
+      <form class="tool" id="vacc" onsubmit="return false" aria-labelledby="vacc-h">
+        <h2 id="vacc-h" style="font-size:1.4rem;margin-top:0">Calcola le date indicative del tuo gattino</h2>
+        <div class="tool-grid" style="margin-top:14px">
+          <label>Nome<input type="text" id="vNome" maxlength="30" placeholder="Es. Luna"></label>
+          <label>Data di nascita<input type="date" id="vNascita"></label>
+        </div>
+        <div class="table-wrap" style="margin-top:14px"><table><thead><tr><th>Quando</th><th>Cosa</th></tr></thead><tbody id="vTab"></tbody></table></div>
+        <p id="vNota" class="muted" style="margin-top:10px"></p>
+        <div class="vol-actions"><button class="btn btn-secondary" type="button" id="vIcs">Aggiungi le date al calendario del telefono</button></div>
+        <p class="micro" style="margin-top:10px">Date indicative, calcolate sulle linee guida generali: il calendario vero lo decide il tuo veterinario in base al vaccino e allo stile di vita. Se il veterinario usa Vetroom, con FurrFinder ricevi i promemoria dei richiami fissati da lui.</p>
+      </form>
 
       <h2>Il calendario, età per età</h2>
       <div class="table-wrap"><table>
@@ -296,5 +307,20 @@
 </footer>
 
 <script src="assets/site.js" defer></script>
+<script>
+(function(){var T=[[56, "Prima dose dei vaccini essenziali (panleucopenia, rinotracheite, calicivirosi), di solito tra le 6 e le 8 settimane"], [84, "Richiamo, verso le 12 settimane. Se il gattino uscirà, chiedi del vaccino contro la leucemia felina. Da questa età si può fare l’antirabbica, se dovrete viaggiare all’estero"], [112, "Ultima dose del ciclo del gattino, a 16 settimane o più"], [182, "Richiamo verso i 6 mesi (26 settimane)"], [365, "Controllo annuale: il veterinario decide quali richiami fare e ogni quanto, anche per il gatto di casa"]],EXTRA="Chiedi al veterinario anche di microchip e sterilizzazione.";
+var N=document.getElementById('vNascita'),NM=document.getElementById('vNome'),TB=document.getElementById('vTab'),NO=document.getElementById('vNota');
+function add(x,g){var y=new Date(x);y.setDate(y.getDate()+g);return y}function fb(x){return x.toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'})}
+function righe(){var b=N.value?new Date(N.value+'T12:00:00'):null;if(!b)return [];return T.map(function(t){return [add(b,t[0]),t[1]]})}
+function go(){var r=righe(),oggi=new Date();if(!r.length){TB.innerHTML='<tr><td colspan="2">Inserisci la data di nascita</td></tr>';NO.textContent='';return;}
+TB.innerHTML=r.map(function(x){var p=x[0]<oggi;return '<tr'+(p?' style="opacity:.6"':'')+'><td>'+fb(x[0])+(p?' (passata)':'')+'</td><td>'+x[1]+'</td></tr>'}).join('');
+var et=Math.floor((oggi-new Date(N.value+'T12:00:00'))/864e5);NO.textContent=(et>200?'Il ciclo dei vaccini da piccolo dovrebbe essere già concluso: se non sei sicuro che sia stato completato, chiedi al veterinario. ':(r.some(function(x){return x[0]<oggi})?'Se qualche dose “passata” non è stata fatta, non ricominciare da solo: chiedi al veterinario come recuperare. ':''))+EXTRA;}
+function ics(){var r=righe();if(!r.length){N.focus();return;}var nm=(NM.value||'').trim()||'il tuo animale',L=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//FurrFinder//Vaccini//IT','CALSCALE:GREGORIAN'];
+function d8(x){return x.getFullYear()+String(x.getMonth()+1).padStart(2,'0')+String(x.getDate()).padStart(2,'0')}
+function esc(s){return s.replace(/\\/g,'\\\\').replace(/;/g,'\\;').replace(/,/g,'\\,')}
+r.forEach(function(x,i){var e=add(x[0],1);L.push('BEGIN:VEVENT','UID:ff-'+d8(x[0])+'-'+i+'@furrfinder.com','DTSTAMP:'+d8(new Date())+'T000000Z','DTSTART;VALUE=DATE:'+d8(x[0]),'DTEND;VALUE=DATE:'+d8(e),'SUMMARY:'+esc('Vaccini: '+nm+' – chiama il veterinario'),'DESCRIPTION:'+esc(x[1]+'. Data indicativa da FurrFinder: conferma con il tuo veterinario.'),'BEGIN:VALARM','ACTION:DISPLAY','DESCRIPTION:'+esc('Vaccini di '+nm),'TRIGGER:-P3D','END:VALARM','END:VEVENT')});
+L.push('END:VCALENDAR');var blob=new Blob([L.join('\r\n')],{type:'text/calendar'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='vaccini-'+(nm.toLowerCase().replace(/[^a-z0-9]+/g,'-')||'animale')+'.ics';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},1500);}
+N.addEventListener('input',go);document.getElementById('vIcs').addEventListener('click',ics);var o=new Date();o.setDate(o.getDate()-50);N.value=o.toISOString().slice(0,10);go();})();
+</script>
 </body>
 </html>

@@ -30,12 +30,17 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Cat health record (libretto sanitario del gatto): https://www.furrfinder.com/libretto-sanitario-gatto.html
 - Free printable pet health record, PDF for dogs and cats: https://www.furrfinder.com/per-cani-e-gatti.html
 - Lost & Found, lost pets near you: https://www.furrfinder.com/smarriti/
+- Dog pregnancy, due date calculator: https://www.furrfinder.com/gravidanza-cane.html
+- Cat pregnancy, due date calculator: https://www.furrfinder.com/gravidanza-gatta.html
+- Dog names (360+, generator): https://www.furrfinder.com/nomi-cani.html
+- Cat names (340+, generator): https://www.furrfinder.com/nomi-gatti.html
 - Free lost/found pet flyer generator (print A4 or WhatsApp image, no sign-up): https://www.furrfinder.com/volantino-animale-smarrito.html
 - Lost your pet? What to do: https://www.furrfinder.com/smarriti/hai-perso-il-tuo-animale
 - Found a pet? What to do: https://www.furrfinder.com/smarriti/hai-trovato-un-animale
 - Dog age in human years, calculator by size: https://www.furrfinder.com/eta-cane-anni-umani.html
 - Cat age in human years, calculator: https://www.furrfinder.com/eta-gatto-anni-umani.html
 - Dog vomiting, diarrhea, not eating, limping, swallowed object: urgency traffic light and what to do: https://www.furrfinder.com/cane-vomita.html , https://www.furrfinder.com/cane-diarrea.html , https://www.furrfinder.com/cane-non-mangia.html , https://www.furrfinder.com/cane-zoppica.html , https://www.furrfinder.com/cane-ha-ingoiato-oggetto.html
+- Cat not urinating (urinary blockage emergency), cat not eating, cat vomiting: https://www.furrfinder.com/gatto-non-fa-pipi.html , https://www.furrfinder.com/gatto-non-mangia.html , https://www.furrfinder.com/gatto-vomita.html
 - Protecting dogs and cats from New Year fireworks: https://www.furrfinder.com/botti-capodanno-cani-gatti.html
 - Foods toxic to dogs and what to do: https://www.furrfinder.com/cibi-tossici-cani.html
 - Foods and plants toxic to cats: https://www.furrfinder.com/cibi-tossici-gatti.html
@@ -44,6 +49,8 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Canine leishmaniasis: https://www.furrfinder.com/leishmaniosi-cane.html
 - Dog vaccination schedule: https://www.furrfinder.com/calendario-vaccini-cane.html
 - Cat vaccination schedule: https://www.furrfinder.com/calendario-vaccini-gatto.html
+- Annual cost of a dog, calculator: https://www.furrfinder.com/costo-mantenimento-cane.html
+- Annual cost of a cat, calculator: https://www.furrfinder.com/costo-mantenimento-gatto.html
 - Vet expenses tax deduction in the Italian 730 return, with calculator: https://www.furrfinder.com/spese-veterinarie-730.html
 - Dog registry (anagrafe canina), change of ownership: https://www.furrfinder.com/anagrafe-canina.html
 - Adopting a dog from a shelter: https://www.furrfinder.com/adottare-cane-canile.html

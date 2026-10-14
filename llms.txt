@@ -40,6 +40,7 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Dog age in human years, calculator by size: https://www.furrfinder.com/eta-cane-anni-umani.html
 - Cat age in human years, calculator: https://www.furrfinder.com/eta-gatto-anni-umani.html
 - Dog vomiting, diarrhea, not eating, limping, swallowed object: urgency traffic light and what to do: https://www.furrfinder.com/cane-vomita.html , https://www.furrfinder.com/cane-diarrea.html , https://www.furrfinder.com/cane-non-mangia.html , https://www.furrfinder.com/cane-zoppica.html , https://www.furrfinder.com/cane-ha-ingoiato-oggetto.html
+- Cat not urinating (urinary blockage emergency), cat not eating, cat vomiting: https://www.furrfinder.com/gatto-non-fa-pipi.html , https://www.furrfinder.com/gatto-non-mangia.html , https://www.furrfinder.com/gatto-vomita.html
 - Protecting dogs and cats from New Year fireworks: https://www.furrfinder.com/botti-capodanno-cani-gatti.html
 - Foods toxic to dogs and what to do: https://www.furrfinder.com/cibi-tossici-cani.html
 - Foods and plants toxic to cats: https://www.furrfinder.com/cibi-tossici-gatti.html

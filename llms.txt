@@ -25,7 +25,8 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Features: https://www.furrfinder.com/funzionalita.html
 - Data security: https://www.furrfinder.com/sicurezza.html
 - FAQ: https://www.furrfinder.com/faq.html
-- Guides: https://www.furrfinder.com/guide.html
+- Guides hub with search: https://www.furrfinder.com/guide.html
+- Free tools hub (calculators, flyer, printable record): https://www.furrfinder.com/strumenti.html
 - Dog health record (libretto sanitario del cane): https://www.furrfinder.com/libretto-sanitario-cane.html
 - Cat health record (libretto sanitario del gatto): https://www.furrfinder.com/libretto-sanitario-gatto.html
 - Free printable pet health record, PDF for dogs and cats: https://www.furrfinder.com/per-cani-e-gatti.html

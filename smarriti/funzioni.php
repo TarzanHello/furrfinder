@@ -128,12 +128,12 @@ function sm_pagina($o) {
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="preload" href="/assets/fonts/nunito-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/assets/site.css?v=2026-10-14" />
+  <link rel="stylesheet" href="/assets/site.css?v=2026-10-15" />
 <?php } else { ?>
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="stylesheet" href="/assets/site.css?v=2026-10-14" />
+  <link rel="stylesheet" href="/assets/site.css?v=2026-10-15" />
 <?php } ?>
   <meta property="og:locale" content="it_IT" />
   <meta property="og:site_name" content="<?= SM_MARCA === 'furrfinder' ? 'FurrFinder' : 'Vetroom' ?>" />
@@ -228,7 +228,7 @@ function sm_pagina($o) {
     <p class="legal"><a href="/privacy.html">Privacy</a> · <a href="/cookie-policy.html">Cookie</a> · <a href="/termini.html">Termini</a><br>FurrFinder è un servizio di AF&amp;B S.r.l.s. · Via Mario Ugo Guattari 48, 00173 Roma (RM) · P.IVA 13698751008 · REA RM-1466364 · Capitale sociale € 2.700,00 i.v. · info@vetroom.it<br>Le informazioni su questo sito non sostituiscono la visita del veterinario.</p>
   </div>
 </footer>
-<script src="/assets/site.js?v=2026-10-14" defer></script>
+<script src="/assets/site.js?v=2026-10-15" defer></script>
 <?php } else { ?>
   <footer class="site-footer">
     <div class="container">

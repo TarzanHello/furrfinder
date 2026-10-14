@@ -30,6 +30,8 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Cat health record (libretto sanitario del gatto): https://www.furrfinder.com/libretto-sanitario-gatto.html
 - Free printable pet health record, PDF for dogs and cats: https://www.furrfinder.com/per-cani-e-gatti.html
 - Lost & Found, lost pets near you: https://www.furrfinder.com/smarriti/
+- Dog names (360+, generator): https://www.furrfinder.com/nomi-cani.html
+- Cat names (340+, generator): https://www.furrfinder.com/nomi-gatti.html
 - Free lost/found pet flyer generator (print A4 or WhatsApp image, no sign-up): https://www.furrfinder.com/volantino-animale-smarrito.html
 - Lost your pet? What to do: https://www.furrfinder.com/smarriti/hai-perso-il-tuo-animale
 - Found a pet? What to do: https://www.furrfinder.com/smarriti/hai-trovato-un-animale

@@ -36,6 +36,10 @@ FurrFinder is a free digital health record ("libretto sanitario digitale") for d
 - Dog names (360+, generator): https://www.furrfinder.com/nomi-cani.html
 - Cat names (340+, generator): https://www.furrfinder.com/nomi-gatti.html
 - Free lost/found pet flyer generator (print A4 or WhatsApp image, no sign-up): https://www.furrfinder.com/volantino-animale-smarrito.html
+- Dog parks (aree cani / aree di sgambamento) near me and in 300+ Italian cities, map from OpenStreetMap: https://www.furrfinder.com/aree-cani/
+- Pet sitter instruction sheet (meals, habits, medicines, vet and emergency contacts), printable: https://www.furrfinder.com/scheda-pet-sitter.html
+- Dry food price comparison: cost per kg, per day and per year using the label's daily ration: https://www.furrfinder.com/confronto-prezzo-crocchette.html
+- Adoption ad generator for shelters and rescues (A4 poster, Instagram post and story): https://www.furrfinder.com/annuncio-adozione-cane-gatto.html
 - Lost your pet? What to do: https://www.furrfinder.com/smarriti/hai-perso-il-tuo-animale
 - Found a pet? What to do: https://www.furrfinder.com/smarriti/hai-trovato-un-animale
 - Dog age in human years, calculator by size: https://www.furrfinder.com/eta-cane-anni-umani.html

@@ -1,0 +1,21 @@
+/* FurrFinder · aree cani */
+.ac-map{height:min(62vh,460px);border-radius:var(--r);border:1px solid var(--line);margin-top:22px;z-index:0;background:var(--paper-2)}
+.ac-attr{margin-top:8px;color:var(--muted)}
+.ac-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.ac-item{padding:18px 20px;scroll-margin-top:90px}
+.ac-item h3{font-size:1.12rem;display:flex;gap:10px;align-items:flex-start;line-height:1.25}
+.ac-n{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:.85rem;font-weight:900}
+.ac-via{margin-top:4px;color:var(--muted);font-size:.95rem}
+.ac-info{margin-top:8px;font-size:.95rem}
+.ac-links{margin-top:10px;font-size:.92rem}
+.ac-citta{list-style:none;padding:0;margin:10px 0 0;columns:4 140px;column-gap:20px}
+.ac-citta li{padding:3px 0;break-inside:avoid}
+.ac-citta .muted{font-size:.85rem}
+.ac-pin{background:none;border:0}
+.ac-pin span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#0B2545;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);color:#fff;font:900 12px/1 Nunito,sans-serif}
+#vicino .ac-list{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+#vicino .ac-item{box-shadow:none;background:var(--paper)}
+.leaflet-container{font:inherit;font-size:.92rem}
+.leaflet-container a{color:var(--sky-ink)}
+:root[data-theme="dark"] .leaflet-popup-content-wrapper,:root[data-theme="dark"] .leaflet-popup-tip{background:var(--surface);color:var(--text)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .leaflet-popup-content-wrapper,:root:not([data-theme="light"]) .leaflet-popup-tip{background:var(--surface);color:var(--text)}}

@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scheda per il pet sitter: istruzioni per cane e gatto da stampare | FurrFinder</title>
+<meta name="description" content="Compila la scheda per chi accudisce il tuo cane o gatto mentre sei via: pasti, uscite, abitudini, medicine, veterinario e numeri di emergenza. Stampala o salvala in PDF. Gratis.">
+<link rel="canonical" href="https://www.furrfinder.com/scheda-pet-sitter.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0B2545">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="FurrFinder">
+<meta property="og:title" content="Scheda per il pet sitter: tutto quello che deve sapere">
+<meta property="og:description" content="Compila la scheda per chi accudisce il tuo cane o gatto mentre sei via: pasti, uscite, abitudini, medicine, veterinario e numeri di emergenza. Stampala o salvala in PDF. Gratis.">
+<meta property="og:url" content="https://www.furrfinder.com/scheda-pet-sitter.html">
+<meta property="og:image" content="https://www.furrfinder.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/nunito-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=2026-10-15">
+<style>
+.ps{display:grid;gap:26px;align-items:start}
+@media (min-width:1000px){.ps{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.ps-sheet{position:sticky;top:90px;max-height:calc(100vh - 110px);overflow:auto}}
+.ps fieldset{border:0;padding:0;margin:0 0 22px}
+.ps legend{font-family:var(--f-head);font-weight:900;color:var(--ink);font-size:1.15rem;margin-bottom:10px;padding:0}
+.ps .full{grid-column:1/-1}
+.ps textarea{font:inherit;font-size:1.05rem;color:var(--text);background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:10px 12px;min-height:84px;width:100%;resize:vertical}
+.ps textarea:focus{outline:3px solid var(--sky-soft);border-color:var(--sky)}
+.med{display:grid;grid-template-columns:2fr 1.3fr 1.3fr auto;gap:8px;margin-bottom:8px;align-items:end}
+.med button{font:inherit;font-size:.9rem;font-weight:700;color:var(--muted);background:none;border:0;cursor:pointer;padding:10px 4px;text-decoration:underline}
+@media (max-width:560px){.med{grid-template-columns:1fr 1fr}.med label:first-child{grid-column:1/-1}}
+.ps-sheet{background:#fff;color:#1F2F40;border-radius:14px;box-shadow:var(--shadow);padding:26px 26px 20px;font-size:15px;line-height:1.45;margin-top:26px}
+.ps-sheet h2{font-family:var(--f-head);color:#0B2545;font-size:1.55rem;font-weight:900;margin:0;letter-spacing:-.01em}
+.ps-sheet h3{font-family:var(--f-head);color:#0B2545;font-size:1rem;font-weight:900;margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em}
+.ps-sheet .s-top{display:flex;gap:16px;align-items:center;border-bottom:3px solid #0B2545;padding-bottom:12px}
+.ps-sheet .s-foto{width:92px;height:92px;border-radius:12px;background:#EAF2FA center/cover no-repeat;flex:none}
+.ps-sheet .s-sub{color:#5A6B7D;margin-top:4px}
+.ps-sheet .s-sos{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:14px 0;background:#FEF2F2;border:2px solid #B91C1C;border-radius:12px;padding:10px 12px}
+.ps-sheet .s-sos div{font-size:.86rem;color:#7F1D1D}
+.ps-sheet .s-sos b{display:block;font-size:1.05rem;color:#111}
+.ps-sheet .s-sez{margin-top:12px;break-inside:avoid}
+.ps-sheet .s-sez p{margin:0;white-space:pre-line}
+.ps-sheet table{font-size:.92rem;margin-top:4px;border:1px solid #D9E3EE}
+.ps-sheet th,.ps-sheet td{padding:6px 8px;color:#1F2F40;border-bottom:1px solid #D9E3EE}
+.ps-sheet th{color:#0B2545}
+.ps-sheet .s-firma{margin-top:16px;padding-top:10px;border-top:1px dashed #9FB2C7;font-size:.88rem;color:#5A6B7D}
+.ps-sheet .s-foot{margin-top:10px;font-size:.78rem;color:#93A6BA;text-align:right}
+.ps-sheet .vuoto{color:#93A6BA;font-style:italic}
+@media print{
+  @page{size:A4;margin:12mm}
+  body:has(.ps-sheet){background:#fff}
+  body:has(.ps-sheet) > *:not(main), body:has(.ps-sheet) main .page-header, body:has(.ps-sheet) .section > .container > *:not(.ps), body:has(.ps-sheet) .ps > :not(.ps-sheet){display:none !important}
+  body:has(.ps-sheet) .ps{display:block}
+  body:has(.ps-sheet) .section, body:has(.ps-sheet) .container{padding:0;max-width:none}
+  body:has(.ps-sheet) .ps-sheet{position:static;max-height:none;overflow:visible;box-shadow:none;border-radius:0;padding:0;margin:0;font-size:12.5pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.furrfinder.com/#org",
+   "name": "FurrFinder",
+   "legalName": "AF&B S.r.l.s.",
+   "url": "https://www.furrfinder.com/",
+   "logo": "https://www.furrfinder.com/assets/logo.png",
+   "email": "info@vetroom.it",
+   "vatID": "IT13698751008",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Mario Ugo Guattari 48",
+    "postalCode": "00173",
+    "addressLocality": "Roma",
+    "addressRegion": "RM",
+    "addressCountry": "IT"
+   },
+   "sameAs": [
+    "https://www.vetroom.it/"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.furrfinder.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Strumenti",
+     "item": "https://www.furrfinder.com/strumenti.html"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Scheda per il pet sitter",
+     "item": "https://www.furrfinder.com/scheda-pet-sitter.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Cosa devo lasciare al pet sitter?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Le istruzioni scritte su pasti, uscite o lettiera e abitudini, le medicine con orari e quantità, il numero del tuo veterinario e di un pronto soccorso veterinario aperto 24 ore, un contatto di emergenza vicino a casa, e una tua autorizzazione per le cure urgenti. Con questa scheda hai tutto su un foglio."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Devo lasciare anche il libretto sanitario?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sì, o almeno una copia: al veterinario servono vaccini, malattie e terapie in corso. Se usi il libretto digitale di FurrFinder puoi mostrare tutto dal telefono."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Il pet sitter può portare il mio animale dal veterinario?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sì, ma è meglio avvisare prima la clinica e lasciare per iscritto chi può portarlo e fino a quale cifra autorizzi le cure. Nella scheda c’è il campo apposta."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I dati che scrivo dove finiscono?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da nessuna parte: la scheda si crea nel browser. Se premi “Salva sul dispositivo” resta solo su questo telefono o computer, così la prossima volta la ritrovi già compilata."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Posso usarla per la pensione o per i nonni?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Certo: va bene per chiunque si prenda cura del tuo animale, dalla pensione al vicino di casa."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "WebApplication",
+   "name": "Generatore della scheda di istruzioni per pet sitter e dog sitter",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Web",
+   "url": "https://www.furrfinder.com/scheda-pet-sitter.html",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "publisher": {
+    "@id": "https://www.furrfinder.com/#org"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+
+<header class="site-header" id="header">
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="/" aria-label="FurrFinder, home"><img src="/assets/logo-mark.png" alt="" width="38" height="38">FurrFinder</a>
+      <nav class="nav" aria-label="Principale">
+        <a href="/come-funziona.html">L’app</a>
+        <a href="/strumenti.html" aria-current="page">Strumenti</a>
+        <a href="/guide.html">Guide</a>
+        <a href="/smarriti/">Animali smarriti</a>
+        <a href="/#veterinari">Per i veterinari</a>
+      </nav>
+      <div class="bar-actions">
+        <a class="search-btn" href="/guide.html#cerca" aria-label="Cerca nel sito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></a>
+        <a class="btn btn-ghost btn-sm" href="https://www.vetroom.it/app/?per=proprietario">Accedi</a>
+        <a class="btn btn-primary btn-sm" href="https://www.vetroom.it/app/?per=proprietario">Crea il libretto</a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri il menu" data-menu>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menu">
+      <a href="/guide.html#cerca">Cerca nel sito</a>
+      <a href="/come-funziona.html">L’app</a>
+      <a href="/strumenti.html" aria-current="page">Strumenti</a>
+      <a href="/guide.html">Guide</a>
+      <a href="/smarriti/">Animali smarriti</a>
+      <a href="/#veterinari">Per i veterinari</a>
+      <a href="https://www.vetroom.it/app/?per=proprietario">Accedi</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenuto">
+<header class="page-header">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Percorso"><ol><li><a href="/">Home</a></li><li><a href="/strumenti.html">Strumenti</a></li><li aria-current="page">Scheda per il pet sitter</li></ol></nav>
+    <h1>Scheda per il pet sitter: le istruzioni da lasciare quando parti</h1>
+  </div>
+</header>
+<section class="section">
+  <div class="container">
+    <p class="lead">Pasti, uscite, abitudini, medicine e numeri di emergenza su un unico foglio, per il pet sitter, la pensione o chi tiene il tuo cane o gatto mentre sei via. Compilala una volta, stampala o salvala in PDF.</p>
+
+    <div class="ps">
+      <form class="tool" id="psForm" onsubmit="return false" aria-label="Dati della scheda">
+        <fieldset><legend>L’animale</legend>
+          <div class="tool-grid">
+            <label>Animale<select data-k="specie"><option value="cane">Cane</option><option value="gatto">Gatto</option><option value="altro">Altro</option></select></label>
+            <label>Nome<input type="text" data-k="nome" maxlength="30" placeholder="Es. Luna"></label>
+            <label>Razza o aspetto<input type="text" data-k="razza" maxlength="50" placeholder="Es. Meticcio nero, taglia media"></label>
+            <label>Età<input type="text" data-k="eta" maxlength="20" placeholder="Es. 6 anni"></label>
+            <label>Peso<input type="text" data-k="peso" maxlength="12" placeholder="Es. 18 kg"></label>
+            <label>Microchip<input type="text" data-k="chip" maxlength="20" inputmode="numeric" placeholder="15 cifre"></label>
+            <label class="full">Foto (facoltativa)<input type="file" id="foto" accept="image/*"></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend>Quando parti</legend>
+          <div class="tool-grid">
+            <label>Il tuo nome<input type="text" data-k="pNome" maxlength="40" autocomplete="name"></label>
+            <label>Il tuo telefono<input type="tel" data-k="pTel" maxlength="20" autocomplete="tel"></label>
+            <label>Parto il<input type="date" data-k="dal"></label>
+            <label>Torno il<input type="date" data-k="al"></label>
+            <label class="full">Dove sono raggiungibile<input type="text" data-k="dove" maxlength="80" placeholder="Es. In Sicilia, rispondo anche su WhatsApp"></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend>Pasti</legend>
+          <div class="tool-grid">
+            <label class="full">Cosa mangia e quanto<textarea data-k="cibo" maxlength="300" placeholder="Es. 1 misurino di crocchette (120 g) la mattina e 1 la sera. Il misurino è nel sacco."></textarea></label>
+            <label>A che ora<input type="text" data-k="orari" maxlength="60" placeholder="Es. 8:00 e 19:00"></label>
+            <label>Dove trovi il cibo<input type="text" data-k="doveCibo" maxlength="80" placeholder="Es. Mobile della cucina, in basso"></label>
+            <label class="full">Premi e snack permessi<input type="text" data-k="premi" maxlength="120" placeholder="Es. Al massimo 3 biscotti al giorno, dopo la passeggiata"></label>
+            <label class="full">Non dargli mai<input type="text" data-k="mai" maxlength="160" value="Avanzi, cioccolato, uva e uvetta, cipolla, aglio, ossa cotte"></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend id="lgUscite">Uscite e bisogni</legend>
+          <div class="tool-grid">
+            <label class="full"><span id="lUscite">Passeggiate: quando, quanto, dove</span><textarea data-k="uscite" maxlength="300" placeholder="Es. 3 uscite: 7:30, 13:00 e 21:00, circa 20 minuti. Sempre al guinzaglio, tira quando vede altri cani."></textarea></label>
+            <label class="full">Dove sono guinzaglio, sacchetti, trasportino, lettiera<input type="text" data-k="attrezzi" maxlength="120" placeholder="Es. Appesi all’ingresso"></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend>Carattere e abitudini</legend>
+          <div class="tool-grid">
+            <label class="full">Abitudini, giochi, dove dorme<textarea data-k="abitudini" maxlength="300" placeholder="Es. Dorme sul divano. Adora la pallina. Conosce seduto, resta e vieni."></textarea></label>
+            <label class="full">Paure e cose da evitare<textarea data-k="paure" maxlength="300" placeholder="Es. Ha paura dei temporali: si nasconde sotto il letto, lascialo stare. Non va d’accordo con i gatti."></textarea></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend>Medicine</legend>
+          <p class="micro" style="margin:0 0 10px">Scrivi solo le medicine che ti ha prescritto il veterinario, con la quantità e l’orario che ti ha indicato.</p>
+          <div id="meds"></div>
+          <button class="btn btn-secondary btn-sm" type="button" id="addMed">+ Aggiungi una medicina</button>
+        </fieldset>
+
+        <fieldset><legend>Veterinario ed emergenze</legend>
+          <div class="tool-grid">
+            <label>Veterinario o clinica<input type="text" data-k="vNome" maxlength="60" placeholder="Es. Clinica Veterinaria San Rocco"></label>
+            <label>Telefono del veterinario<input type="tel" data-k="vTel" maxlength="20"></label>
+            <label class="full">Indirizzo<input type="text" data-k="vInd" maxlength="100"></label>
+            <label>Pronto soccorso aperto 24 ore<input type="text" data-k="hNome" maxlength="60" placeholder="Nome della struttura"></label>
+            <label>Telefono del pronto soccorso<input type="tel" data-k="hTel" maxlength="20"></label>
+            <label>Contatto di emergenza vicino a casa<input type="text" data-k="eNome" maxlength="40" placeholder="Es. Marta, la vicina"></label>
+            <label>Telefono del contatto<input type="tel" data-k="eTel" maxlength="20"></label>
+            <label class="full">Autorizzo cure urgenti fino a (€)<input type="number" data-k="tetto" min="0" step="50" inputmode="numeric" placeholder="Es. 300"></label>
+          </div>
+        </fieldset>
+
+        <fieldset><legend>Casa e altre note</legend>
+          <div class="tool-grid">
+            <label class="full">Altre note<textarea data-k="note" maxlength="400" placeholder="Es. Chiudi sempre la porta del balcone. Il Wi‑Fi è “CasaRossi”."></textarea></label>
+          </div>
+        </fieldset>
+
+        <div class="vol-actions">
+          <button class="btn btn-primary" type="button" id="stampa">Stampa o salva in PDF</button>
+          <button class="btn btn-secondary" type="button" id="salva">Salva sul dispositivo</button>
+          <button class="btn btn-ghost btn-sm" type="button" id="svuota">Svuota</button>
+        </div>
+        <p class="vol-note" id="stato">I dati non escono dal tuo dispositivo: la scheda si crea qui, nel browser.</p>
+      </form>
+
+      <div class="ps-sheet" id="sheet" aria-label="Anteprima della scheda"></div>
+    </div>
+
+    <article class="prose" style="margin-top:34px">
+      <h2>Prima di partire: la lista di controllo</h2>
+      <ul class="check">
+        <li><strong>Fai conoscere il pet sitter al tuo animale</strong> qualche giorno prima, con una passeggiata o una visita a casa insieme a te.</li>
+        <li><strong>Avvisa il veterinario</strong> che sarai via e chi potrebbe portargli l’animale.</li>
+        <li><strong>Lascia cibo e medicine per qualche giorno in più</strong> del previsto, in caso di ritardi.</li>
+        <li><strong>Controlla i dati del microchip</strong> all’anagrafe: se si perde, è il tuo numero che chiameranno. Leggi la guida all’<a href="anagrafe-canina.html">anagrafe canina</a>.</li>
+        <li><strong>Lascia il libretto sanitario</strong> o una copia, con vaccini e terapie in corso.</li>
+        <li><strong>Prepara una foto recente</strong>: se scappa, con il <a href="volantino-animale-smarrito.html">volantino per animali smarriti</a> il pet sitter può fare subito l’avviso.</li>
+      </ul>
+      <p>Se ti sembra che stia male, la cosa giusta è chiamare il veterinario. Il pet sitter può dare un’occhiata alle nostre guide su <a href="/guide.html#cosafare">cosa fare se il cane o il gatto sta male</a>, scritte con un medico veterinario.</p>
+      <p>Se invece lo porti con te, leggi le guide per viaggiare con il <a href="cane-in-treno.html">cane in treno</a> e con <a href="cane-gatto-in-aereo.html">cane e gatto in aereo</a>.</p>
+
+      <h2>Domande frequenti</h2>
+      <div class="faq">
+        <details><summary>Cosa devo lasciare al pet sitter?</summary><p>Le istruzioni scritte su pasti, uscite o lettiera e abitudini, le medicine con orari e quantità, il numero del tuo veterinario e di un pronto soccorso veterinario aperto 24 ore, un contatto di emergenza vicino a casa, e una tua autorizzazione per le cure urgenti. Con questa scheda hai tutto su un foglio.</p></details>
+        <details><summary>Devo lasciare anche il libretto sanitario?</summary><p>Sì, o almeno una copia: al veterinario servono vaccini, malattie e terapie in corso. Se usi il libretto digitale di FurrFinder puoi mostrare tutto dal telefono.</p></details>
+        <details><summary>Il pet sitter può portare il mio animale dal veterinario?</summary><p>Sì, ma è meglio avvisare prima la clinica e lasciare per iscritto chi può portarlo e fino a quale cifra autorizzi le cure. Nella scheda c’è il campo apposta.</p></details>
+        <details><summary>I dati che scrivo dove finiscono?</summary><p>Da nessuna parte: la scheda si crea nel browser. Se premi “Salva sul dispositivo” resta solo su questo telefono o computer, così la prossima volta la ritrovi già compilata.</p></details>
+        <details><summary>Posso usarla per la pensione o per i nonni?</summary><p>Certo: va bene per chiunque si prenda cura del tuo animale, dalla pensione al vicino di casa.</p></details>
+      </div>
+    </article>
+
+    <div class="callout">
+      <p><strong>Il libretto sempre in tasca.</strong> Con FurrFinder vaccini, referti e terapie sono sul telefono: puoi mostrarli al pet sitter o al veterinario di turno in qualsiasi momento. Gratis.</p>
+      <div class="cta-row"><a class="btn btn-primary" href="https://www.vetroom.it/app/?per=proprietario">Crea il libretto gratis</a><a class="btn btn-secondary" href="/strumenti.html">Tutti gli strumenti</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div>
+        <a class="brand" href="/" style="font-size:1.15rem"><img src="/assets/logo-mark.png" alt="" width="30" height="30" style="width:30px;height:30px">FurrFinder</a>
+        <p style="margin-top:12px;max-width:34ch">Il libretto sanitario digitale di cane e gatto, collegato al tuo veterinario. Con guide riviste da un medico veterinario e strumenti gratuiti.</p>
+        <p style="margin-top:12px"><a href="https://www.vetroom.it/">Sei un veterinario? Scopri Vetroom</a></p>
+      </div>
+      <div><h4>L’app</h4><ul><li><a href="/come-funziona.html">Come funziona</a></li><li><a href="/funzionalita.html">Funzionalità</a></li><li><a href="/sicurezza.html">Sicurezza dei dati</a></li><li><a href="/libretto-sanitario-cane.html">Libretto del cane</a></li><li><a href="/libretto-sanitario-gatto.html">Libretto del gatto</a></li><li><a href="/faq.html">Domande frequenti</a></li></ul></div>
+      <div><h4>Strumenti</h4><ul><li><a href="/volantino-animale-smarrito.html">Volantino smarrito</a></li><li><a href="/eta-cane-anni-umani.html">Età in anni umani</a></li><li><a href="/costo-mantenimento-cane.html">Quanto costa un cane</a></li><li><a href="/gravidanza-cane.html">Data del parto</a></li><li><a href="/nomi-cani.html">Nomi per cani e gatti</a></li><li><a href="/per-cani-e-gatti.html">Libretto da stampare</a></li><li><a href="/strumenti.html"><strong>Tutti gli strumenti</strong></a></li></ul></div>
+      <div><h4>Guide</h4><ul><li><a href="/guide.html#cosafare">Cosa fare se sta male</a></li><li><a href="/cibi-tossici-cani.html">Cibi tossici</a></li><li><a href="/calendario-vaccini-cane.html">Vaccini</a></li><li><a href="/passaporto-cane-gatto.html">Passaporto e viaggi</a></li><li><a href="/spese-veterinarie-730.html">Spese nel 730</a></li><li><a href="/guide.html"><strong>Tutte le guide</strong></a></li></ul></div>
+      <div><h4>Aiuto</h4><ul><li><a href="/smarriti/">Animali smarriti</a></li><li><a href="/chi-siamo.html">Chi siamo</a></li><li><a href="/revisione-veterinaria.html">Revisione veterinaria</a></li><li><a href="/contatti.html">Contatti</a></li></ul></div>
+    </div>
+    <p class="legal"><a href="/privacy.html">Privacy</a> · <a href="/cookie-policy.html">Cookie</a> · <a href="/termini.html">Termini</a><br>FurrFinder è un servizio di AF&amp;B S.r.l.s. · Via Mario Ugo Guattari 48, 00173 Roma (RM) · P.IVA 13698751008 · REA RM-1466364 · Capitale sociale € 2.700,00 i.v. · info@vetroom.it<br>Le informazioni su questo sito non sostituiscono la visita del veterinario.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js?v=2026-10-15" defer></script>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},form=$('psForm'),sheet=$('sheet'),foto='',CHIAVE='ff-scheda-pet-sitter';
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function v(k){var el=form.querySelector('[data-k="'+k+'"]');return el?el.value.trim():''}
+function dataIt(x){if(!x)return '';var d=new Date(x+'T12:00:00');return d.toLocaleDateString('it-IT',{weekday:'short',day:'numeric',month:'long'})}
+function med(m){
+  var d=document.createElement('div');d.className='med';
+  d.innerHTML='<label>Medicina<input type="text" maxlength="50" data-m="n" placeholder="Nome"></label><label>Quanto<input type="text" maxlength="30" data-m="q" placeholder="Es. 1 compressa"></label><label>Quando<input type="text" maxlength="40" data-m="w" placeholder="Es. alle 8, col cibo"></label><button type="button" aria-label="Togli la medicina">Togli</button>';
+  if(m){d.querySelector('[data-m=n]').value=m.n||'';d.querySelector('[data-m=q]').value=m.q||'';d.querySelector('[data-m=w]').value=m.w||'';}
+  d.querySelector('button').addEventListener('click',function(){d.remove();disegna();});
+  $('meds').appendChild(d);
+}
+function meds(){return [].slice.call($('meds').children).map(function(d){return{n:d.querySelector('[data-m=n]').value.trim(),q:d.querySelector('[data-m=q]').value.trim(),w:d.querySelector('[data-m=w]').value.trim()}}).filter(function(m){return m.n})}
+function sez(t,txt){return txt?'<div class="s-sez"><h3>'+esc(t)+'</h3><p>'+esc(txt)+'</p></div>':''}
+function disegna(){
+  var sp=v('specie'),gatto=sp==='gatto',nome=v('nome')||(gatto?'il mio gatto':(sp==='cane'?'il mio cane':'il mio animale'));
+  $('lgUscite').textContent=gatto?'Lettiera e uscite':'Uscite e bisogni';
+  $('lUscite').textContent=gatto?'Lettiera: dove, quando pulirla, sabbia':'Passeggiate: quando, quanto, dove';
+  var info=[v('razza'),v('eta'),v('peso')].filter(Boolean).join(' · ');
+  var periodo=(v('dal')||v('al'))?'Sono via '+(v('dal')?'dal '+dataIt(v('dal')):'')+(v('al')?' al '+dataIt(v('al')):''):'';
+  var sos=[['Proprietario',v('pNome'),v('pTel')],['Veterinario',v('vNome'),v('vTel')],['Pronto soccorso 24 ore',v('hNome'),v('hTel')],['Emergenza vicino a casa',v('eNome'),v('eTel')]]
+    .filter(function(r){return r[1]||r[2]}).map(function(r){return '<div>'+esc(r[0])+(r[1]?': '+esc(r[1]):'')+'<b>'+esc(r[2]||'–')+'</b></div>'}).join('');
+  var m=meds(),mt=m.length?'<div class="s-sez"><h3>Medicine</h3><table><thead><tr><th>Medicina</th><th>Quanto</th><th>Quando</th></tr></thead><tbody>'+m.map(function(x){return '<tr><td>'+esc(x.n)+'</td><td>'+esc(x.q)+'</td><td>'+esc(x.w)+'</td></tr>'}).join('')+'</tbody></table></div>':'';
+  var pasti=[v('cibo'),v('orari')?'Orari: '+v('orari'):'',v('doveCibo')?'Il cibo è qui: '+v('doveCibo'):'',v('premi')?'Premi: '+v('premi'):''].filter(Boolean).join('\n');
+  var tetto=v('tetto');
+  sheet.innerHTML='<div class="s-top">'+(foto?'<div class="s-foto" style="background-image:url('+foto+')"></div>':'')+
+    '<div><h2>Istruzioni per '+esc(nome)+'</h2><div class="s-sub">'+esc([info,v('chip')?'Microchip '+v('chip'):''].filter(Boolean).join(' · '))+'</div>'+(periodo?'<div class="s-sub">'+esc(periodo)+(v('dove')?'. '+esc(v('dove')):'')+'</div>':'')+'</div></div>'+
+    (sos?'<div class="s-sos">'+sos+'</div>':'<p class="vuoto" style="margin:12px 0">Qui compariranno i numeri di telefono importanti.</p>')+
+    sez('Pasti',pasti)+sez('Non dargli mai',v('mai'))+mt+
+    sez(gatto?'Lettiera e uscite':'Uscite e bisogni',[v('uscite'),v('attrezzi')?'Dove trovi le cose: '+v('attrezzi'):''].filter(Boolean).join('\n'))+
+    sez('Abitudini',v('abitudini'))+sez('Paure e cose da evitare',v('paure'))+
+    (v('vInd')?sez('Indirizzo del veterinario',v('vInd')):'')+sez('Altre note',v('note'))+
+    '<div class="s-firma">'+(tetto?'In caso di urgenza autorizzo cure veterinarie per '+esc(nome)+' fino a '+esc(Number(tetto).toLocaleString('it-IT'))+' €. ':'')+
+    'Se ti sembra che stia male, chiama subito il veterinario.<br><br>Data e firma: ______________________________</div>'+
+    '<div class="s-foot">Scheda creata con FurrFinder · furrfinder.com</div>';
+}
+function dati(){var o={meds:meds()};[].forEach.call(form.querySelectorAll('[data-k]'),function(el){o[el.dataset.k]=el.value});return o}
+function carica(o){[].forEach.call(form.querySelectorAll('[data-k]'),function(el){if(o[el.dataset.k]!=null)el.value=o[el.dataset.k]});$('meds').innerHTML='';(o.meds&&o.meds.length?o.meds:[null]).forEach(med);}
+form.addEventListener('input',disegna);form.addEventListener('change',disegna);
+$('addMed').addEventListener('click',function(){med();});
+$('foto').addEventListener('change',function(){var f=this.files&&this.files[0];if(!f)return;var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,400/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext('2d').drawImage(im,0,0,c.width,c.height);foto=c.toDataURL('image/jpeg',.82);disegna();};im.src=r.result;};r.readAsDataURL(f);});
+$('stampa').addEventListener('click',function(){disegna();window.print();});
+$('salva').addEventListener('click',function(){try{var o=dati();o.foto=foto;localStorage.setItem(CHIAVE,JSON.stringify(o));$('stato').textContent='Salvata su questo dispositivo: la prossima volta la ritrovi qui, già compilata.';}catch(e){$('stato').textContent='Questo browser non permette di salvare. Usa “Stampa o salva in PDF”.';}});
+$('svuota').addEventListener('click',function(){if(!confirm('Vuoi cancellare tutti i dati della scheda?'))return;try{localStorage.removeItem(CHIAVE)}catch(e){}form.reset();foto='';$('meds').innerHTML='';med();disegna();$('stato').textContent='Scheda svuotata.';});
+var salvata=null;try{salvata=JSON.parse(localStorage.getItem(CHIAVE)||'null')}catch(e){}
+if(salvata){carica(salvata);foto=salvata.foto||'';$('stato').textContent='Abbiamo ritrovato la scheda che avevi salvato su questo dispositivo.';}else med();
+disegna();
+})();
+</script>
+</body>
+</html>

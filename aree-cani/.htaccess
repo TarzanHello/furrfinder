@@ -1,0 +1,18 @@
+# FurrFinder · aree cani per comune (pagine generate da index.php)
+DirectoryIndex index.php
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /aree-cani/
+# La copia locale dei dati non si apre dal browser
+RewriteRule ^cache/ - [F,L]
+# Tutto il resto (tranne i file veri: foglio di stile, script) va a index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
+
+# I file di servizio non si aprono dal browser
+<FilesMatch "^(funzioni|layout|comuni|pagina-comune|pagina-principale)\.php$">
+    Require all denied
+</FilesMatch>

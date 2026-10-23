@@ -208,7 +208,8 @@ function ac_testa($o) {
 <meta name="description" content="<?= h($o['description']) ?>">
 <link rel="canonical" href="<?= h($canon) ?>">
 <meta name="robots" content="<?= empty($o['indicizza']) ? 'noindex, follow' : 'index, follow, max-image-preview:large' ?>">
-<meta name="theme-color" content="#0B2545">
+<meta name="theme-color" content="#F4F8FC">
+<meta name="color-scheme" content="only light">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">

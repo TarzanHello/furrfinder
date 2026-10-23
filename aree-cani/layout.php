@@ -1,7 +1,7 @@
 <?php
 // Intestazione e footer del sito: generati da nav.py, uguali a quelli delle pagine statiche di FurrFinder.
 // Se cambi il menu o il footer del sito, rigenerali tutti insieme.
-define('AC_CSS_V', '2026-10-17');
+define('AC_CSS_V', '2026-10-23');
 function ac_intestazione() { ?>
 <a class="skip" href="#contenuto">Vai al contenuto</a>
 

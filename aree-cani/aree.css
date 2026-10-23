@@ -17,5 +17,3 @@
 #vicino .ac-item{box-shadow:none;background:var(--paper)}
 .leaflet-container{font:inherit;font-size:.92rem}
 .leaflet-container a{color:var(--sky-ink)}
-:root[data-theme="dark"] .leaflet-popup-content-wrapper,:root[data-theme="dark"] .leaflet-popup-tip{background:var(--surface);color:var(--text)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .leaflet-popup-content-wrapper,:root:not([data-theme="light"]) .leaflet-popup-tip{background:var(--surface);color:var(--text)}}

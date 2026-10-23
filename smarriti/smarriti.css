@@ -8,10 +8,6 @@
   --sm-red-soft: #fef2f2; --sm-red-line: #fecaca; --sm-green-soft: #f0fdf4; --sm-green-ink: #166534;
   --sm-sun-soft: #fffbeb; --sm-sun-line: #fcd34d;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .sm-ff { --red2: #f87171; --sm-red-soft: #33151a; --sm-red-line: #7f1d1d; --sm-green-soft: #12301f; --sm-green-ink: #86efac; --sm-sun-soft: #33280b; --sm-sun-line: #a16207; }
-}
-:root[data-theme="dark"] .sm-ff { --red2: #f87171; --sm-red-soft: #33151a; --sm-red-line: #7f1d1d; --sm-green-soft: #12301f; --sm-green-ink: #86efac; --sm-sun-soft: #33280b; --sm-sun-line: #a16207; }
 
 .sm-main { color: var(--sm-text); padding: 26px 0 48px; }
 .sm-main .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }

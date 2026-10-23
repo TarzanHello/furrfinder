@@ -1,6 +1,7 @@
 /* FurrFinder — home page
    Layout: colonna centrale 1180px. Hero a due colonne (testo + telefono con notifiche),
-   poi sezioni alternate su carta chiara e una banda blu notte per i dati. */
+   poi sezioni alternate su carta chiara e una banda blu notte per i dati.
+   Tema solo chiaro (23 ott 2026): niente tema scuro automatico. */
 
 @font-face{font-family:"Nunito";font-weight:800;font-style:normal;font-display:swap;src:url("fonts/nunito-latin-800-normal.woff2") format("woff2")}
 @font-face{font-family:"Nunito";font-weight:900;font-style:normal;font-display:swap;src:url("fonts/nunito-latin-900-normal.woff2") format("woff2")}
@@ -21,25 +22,8 @@
   --f-body:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
   --f-hand:"Caveat","Segoe Print","Bradley Hand",cursive;
   --r:20px;
+  color-scheme:only light;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#0A1626; --paper-2:#0E1D31; --surface:#112339; --ink:#EAF2FA; --text:#D2DDE9; --muted:#93A6BA; --line:#22384F;
-  --sky:#38BDF8; --sky-ink:#7DD3FC; --sky-soft:#0D2E46;
-  --sun:#F7C744; --sun-soft:#3A2D0B; --sun-ink:#F7D27A;
-  --green:#5BD68A; --green-soft:#12301F;
-  --night:#06101D; --on-night:#EAF2FA; --on-night-muted:#9FB2C7;
-  --booklet:#1A2A3F; --booklet-line:#2C4260; --pen:#9DB8FF;
-  --shadow:0 24px 60px -28px rgba(0,0,0,.7);
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0A1626; --paper-2:#0E1D31; --surface:#112339; --ink:#EAF2FA; --text:#D2DDE9; --muted:#93A6BA; --line:#22384F;
-  --sky:#38BDF8; --sky-ink:#7DD3FC; --sky-soft:#0D2E46;
-  --sun:#F7C744; --sun-soft:#3A2D0B; --sun-ink:#F7D27A;
-  --green:#5BD68A; --green-soft:#12301F;
-  --night:#06101D; --on-night:#EAF2FA; --on-night-muted:#9FB2C7;
-  --booklet:#1A2A3F; --booklet-line:#2C4260; --pen:#9DB8FF;
-  --shadow:0 24px 60px -28px rgba(0,0,0,.7);
-  color-scheme:dark}
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -450,8 +434,6 @@ th{font-family:var(--f-head);color:var(--ink);font-weight:800}
 .tox-list p{margin-top:6px;font-size:.98rem}
 .liv{font-family:var(--f-body);font-size:.75rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:2px 10px;background:var(--paper-2);color:var(--muted)}
 .liv-alto{background:#FDE2E2;color:#991B1B}.liv-medio{background:#FFEDD5;color:#9A3412}.liv-basso{background:var(--sun-soft);color:var(--sun-ink)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .liv-alto{background:#4A1515;color:#FCA5A5}:root:not([data-theme="light"]) .liv-medio{background:#47230F;color:#FDBA74}}
-:root[data-theme="dark"] .liv-alto{background:#4A1515;color:#FCA5A5}:root[data-theme="dark"] .liv-medio{background:#47230F;color:#FDBA74}
 .byline{margin-top:12px;font-size:.95rem;color:var(--muted)}
 .byline a{font-weight:600}
 

@@ -137,7 +137,10 @@ function sm_pagina($o) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="<?= h($o['colore'] ?? (SM_MARCA === 'furrfinder' ? '#0b2545' : '#033860')) ?>" />
+  <meta name="theme-color" content="<?= h($o['colore'] ?? (SM_MARCA === 'furrfinder' ? '#f4f8fc' : '#033860')) ?>" />
+<?php if (SM_MARCA === 'furrfinder') { ?>
+  <meta name="color-scheme" content="only light" />
+<?php } ?>
   <title><?= h($o['title']) ?></title>
   <meta name="description" content="<?= h($o['description']) ?>" />
   <meta name="robots" content="<?= empty($o['indicizza']) ? 'noindex,follow' : 'index,follow,max-image-preview:large' ?>" />
@@ -149,7 +152,7 @@ function sm_pagina($o) {
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="preload" href="/assets/fonts/nunito-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/assets/site.css?v=2026-10-17" />
+  <link rel="stylesheet" href="/assets/site.css?v=2026-10-23" />
 <?php } else { ?>
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -167,7 +170,7 @@ function sm_pagina($o) {
 <?php if (!empty($o['mappa'])) { ?>
   <link rel="stylesheet" href="/smarriti/vendor/leaflet-1.9.4/leaflet.css" />
 <?php } ?>
-  <link rel="stylesheet" href="/smarriti/smarriti.css?v=2026-10-11d" />
+  <link rel="stylesheet" href="/smarriti/smarriti.css?v=2026-10-23" />
   <?php foreach (($o['jsonld'] ?? []) as $x) echo '<script type="application/ld+json">' . json_encode($x, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP) . "</script>\n"; ?>
 </head>
 <body class="sm <?= SM_MARCA === 'furrfinder' ? 'sm-ff' : 'sm-vr' ?>">

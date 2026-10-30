@@ -1,0 +1,7 @@
+# Materiale per i social (Metricool lo scarica da qui).
+# Resta raggiungibile dal link diretto, ma Google non lo mette nei risultati
+# e non si vede l'elenco dei file aprendo la cartella dal browser.
+Options -Indexes
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>

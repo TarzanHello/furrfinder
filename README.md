@@ -14,14 +14,14 @@ furrfinder/
 │   ├── pdf/               libretti sanitari da stampare
 │   ├── aree-cani/         sezione "Aree cani" (PHP)
 │   ├── smarriti/          sezione "Animali smarriti" (PHP)
+│   ├── social/            post e reel per i social, divisi per mese
+│   │                      (Metricool li prende da qui; Google non li indicizza)
 │   ├── sitemap.xml, robots.txt, llms.txt, manifest, favicon
 │   └── google98e5….html   verifica di Search Console (non cancellare)
-└── social/    → materiale per i social (post e reel), NON va sul server
-    ├── 2026-10/
-    └── 2026-11/
+└── README.md, .gitignore → file del repo, NON vanno sul server
 ```
 
-Regola semplice: **se un file serve al sito, va dentro `site/`. Tutto il resto sta fuori.**
+Regola semplice: **tutto quello che deve stare online va dentro `site/`. Tutto il resto sta fuori.**
 
 ## Come caricare il sito con FileZilla
 
@@ -35,7 +35,10 @@ Regola semplice: **se un file serve al sito, va dentro `site/`. Tutto il resto s
 I file che iniziano con il punto, come `.htaccess`, possono essere nascosti.
 Per vederli: menu **Server** → **Forza la visualizzazione dei file nascosti**.
 
-**Non caricare la cartella `social`**: sono file pesanti che non servono al sito.
+La cartella `social` va caricata insieme al resto: Metricool scarica post e reel dal link
+`https://www.furrfinder.com/social/MESE/nome-file`, per esempio
+`https://www.furrfinder.com/social/2026-11/post-01.png`.
+I nuovi materiali vanno in una cartella per mese dentro `site/social/` (es. `2026-12`).
 
 ## File da non toccare sul server
 

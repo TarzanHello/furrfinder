@@ -13,6 +13,9 @@ RewriteRule ^index\.html$ / [L,R=301]
 Redirect 301 /controlli-veterinari-animali-domestici.html https://www.furrfinder.com/cartella-clinica-pet.html
 Redirect 301 /gestione-salute-pet.html https://www.furrfinder.com/cartella-clinica-pet.html
 
+# Libretto vaccinale unito alla guida al libretto sanitario del cane (30/10/2026)
+Redirect 301 /libretto-vaccini-cane-gatto.html https://www.furrfinder.com/libretto-sanitario-cane.html
+
 # Vecchio indirizzo con errore di battitura
 Redirect 301 /microchip-cane-gatto-documents.html https://www.furrfinder.com/microchip-cane-gatto-documenti.html
 

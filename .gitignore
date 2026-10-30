@@ -1,0 +1,9 @@
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cache che il sito crea da solo sul server
+site/aree-cani/cache/*
+!site/aree-cani/cache/.htaccess
+site/smarriti/cache/
